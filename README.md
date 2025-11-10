@@ -25,9 +25,28 @@ Our goal is simple, to make you smile 😊
 
 ---
 
-## Installation
+## Installation & Usage
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/idangadish/JokeHub.git
+   ```
+2. **Navigate into the project folder**
+   ```bash
+   cd JokeHub
+   ```
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+4. **Run the app**
+   ```bash
+   npm start
+   ```
+5. **Open the app in your browser**
+   ```
+   http://localhost:3000
+   ```
 
-Clone this repository:
-
-```bash
-git clone https://github.com/your-username/JokeHub.git
+## About
+Created by **Idan Gadish**  
+A small Node.js & Express project to spread some laughter and joy!
