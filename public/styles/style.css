@@ -1,0 +1,232 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/008/820/292/non_2x/blurred-yellow-texture-background-with-white-dotted-pattern-yellow-bright-color-background-free-photo.jpg");
+    background-size: cover;
+}
+
+main {
+    margin-top: 50px;
+    flex: 1; 
+    padding: 0 20px; 
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+    height: 100%;
+}
+
+
+h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+     font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.highlight{
+    color: yellow;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+
+img{
+    width: 50px;
+    margin: 10px;
+}
+
+p{
+     font-family: "Libre Baskerville", serif;
+     font-size: 2rem;
+}
+
+h3{
+     font-family: "Libre Baskerville", serif;
+     font-size: 1rem;
+}
+
+
+.nav {
+  display: flex;          
+  justify-content: end;   
+  gap: 20px;             
+  list-style: none;            
+}
+
+.nav-link{
+    color: white;
+
+}
+
+.nav-link:hover{
+    color: yellow;
+}
+
+.nav-link.active {
+    color: black !important;
+    background-color: yellow !important;
+}
+
+
+.add-joke-form {
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    gap: 10px;
+    padding: 30px;
+}
+
+.add-joke-form > input[type="text"], textarea {
+    padding: 10px;
+    background-color: black;   
+    color: white;            
+    border-radius: 12px;         
+    border: 2px solid yellow;   
+    font-weight: bold;            
+    transition: all 0.3s ease; 
+}
+
+
+.add-joke-form > input[type="submit"] {
+    width: 120px;              
+    padding: 10px;
+    align-self: flex-end;        
+    background-color: black;   
+    color: yellow;            
+    border-radius: 12px;         
+    border: 2px solid yellow;   
+    font-weight: bold;            
+    cursor: pointer;            
+    transition: all 0.3s ease; 
+}
+
+.add-joke-form > input[type="submit"]:hover {
+    background-color: yellow;   
+    color: black;             
+    transform: scale(1.05);     
+}
+
+.add-joke-form h2{
+      font-family: "Libre Baskerville", serif;
+      padding: 20px;
+}
+
+.jokes-container {
+    display: flex;       
+    gap: 20px;           
+    padding: 30px;
+    flex-wrap: wrap;     
+    justify-content: center;
+}
+
+
+.joke-card {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 5px;
+}
+
+.top-card {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 0;
+    bottom: 15px;
+    top: 5px;
+    width: 100%;
+}
+
+.bottom-card {
+    position: absolute;
+    bottom: -20px;
+    right: -10px;     
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.bottom-card button {
+    background-color: yellow;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.bottom-card button svg {
+    width: 24px;   
+    height: 24px;
+    display: block;
+}
+
+
+.top-card > h3{
+    background-color: yellow;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        margin: 10px;
+        font-weight: bold;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;           
+    width: 100%; 
+    z-index: 1000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: yellow;
+  z-index: 1000;
+  text-align: center;
+  padding: 5px 0; 
+}
+
+footer p {
+  font-size: 0.8rem;
+  margin: 0;     
+  padding: 0;
+}
+
+
+
+

@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+  <div class="center-wrapper">
+<% if (locals.joke) { %>
+  <h1>Update your Joke!</h1>
+  <form class="add-joke-form" action="/edit/<%= jokeIndex %>" method="POST">
+    <input type="text" name="title" placeholder="Joke title" value="<%= joke.question %>" required />
+    <textarea name="content" placeholder="Write your joke here..." rows="8" required><%= joke.answer %></textarea>
+    <input type="text" name="name" placeholder="Your name" value="<%= joke.name %>" required />
+    <input type="submit" value="Update Joke" />
+  </form>
+<% } else { %>
+  <h1>Add your Joke!</h1>
+  <form class="add-joke-form" action="/submit" method="POST">
+    <input type="text" name="title" placeholder="Joke title" required />
+    <textarea name="content" placeholder="Write your joke here..." rows="8" required></textarea>
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="submit" value="Submit Joke" />
+  </form>
+<% } %>
+  </div>
+</main>
+
+<%- include("partials/footer.ejs") %>
